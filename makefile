@@ -1,3 +1,5 @@
+all : mygrep
+
 myfilter.o : myfilter.c
 	gcc -c myfilter.c
 	
@@ -11,4 +13,4 @@ mygrep : myfilter.o mypattern.o mygrep.o
 	gcc -o mygrep myfilter.o mypattern.o mygrep.o
 	
 clean :
-	rm mygrep myfilter.o mypattern.o mygrep.o
+	rm mygrep.exe myfilter.o mypattern.o mygrep.o
